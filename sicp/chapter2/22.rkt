@@ -7,7 +7,6 @@
 (define (y-point p) (cdr p))
 
 (define (print-point p)
-  (newLine)
   (display "(")
   (display (x-point p))
   (display ",")
@@ -21,8 +20,8 @@
 (define (end-segment s) (cdr s))
 
 (define (midpoint-segment s)
-  (let (x (start-segment s))
-       (y (end-segment s))
+  (let (xx (start-segment s))
+       (yy (end-segment s))
        (make-point
         (/ (+ (x-point x) (x-point y)) 2)
         (/ (+ (y-point x) (y-point y)) 2))))

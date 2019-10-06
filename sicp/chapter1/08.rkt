@@ -11,7 +11,7 @@
               x)))
 
 (define (good-enough? guess x)
-  (< (abs (- (qube guess) x)) 0.001))
+  (< (abs (- (cube guess) x)) 0.001))
 
 (define (cube x) (* x x x))
 
